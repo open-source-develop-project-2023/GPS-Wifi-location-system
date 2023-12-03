@@ -1,0 +1,165 @@
+
+    :root{
+    --text-color: black;
+    --background-color: aquamarine;
+    --accent-color: black;
+}
+
+body {
+    margin:0;
+    font-family: 'Hi Melody';
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.GIT {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+}
+.GIT__logo {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.GIT__logo i {
+    color: var(--accent-color);
+}
+
+.GIT__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.GIT__menu li {
+    padding: 8px 20px;
+}
+
+.GIT__menu li:hover {
+    background-color: darkcyan;
+    border-radius: 4px;
+}
+
+.GIT__map {
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0;
+}
+
+.GIT__map li {
+    padding: 8px 12px;
+}
+
+.GIT__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+.login-wrapper{
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+}
+
+.login-wrapper > h2{
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+#login-form > input{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    display: flex;
+}
+#login-form > input::placeholder{
+    color: #D2D2D2;
+}
+#login-form > input[type="submit"]{
+    color: #fff;
+    font-size: 14px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+#login-form > input[type="checkbox"]{
+    display: none;
+}
+#login-form > label{
+    color: #999999;
+}
+#login-form input[type="checkbox"] + label{
+    cursor: pointer;
+    padding-left: 26px;
+    background-image: url("checkbox.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#login-form input[type="checkbox"]:checked + label{
+    background-image: url("checkbox-active.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.membership {
+    color: #FFFFFF;
+    background-size: 30px;
+    background-color: black;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .GIT {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+
+    .GIT__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .GIT__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .GIT__map {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .GIT__toogleBtn {
+        display: block;
+    }
+
+    .GIT__menu.active,
+    .GIT__map.active {
+        display: flex;
+    }
+    
+}

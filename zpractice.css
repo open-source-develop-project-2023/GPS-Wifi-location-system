@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+/*flexbox*/
+.flex {display: flex;}
+.col-flex{display: flex;flex-direction: column;}
+.jcc{justify-content: center;}
+.jcsb{justify-content: space-between;}
+.aic{align-items: center;}
+
+
+
+/*Basic*/
+body{
+    background: rgb(85, 154, 151);
+    /*Custom setting*/
+}
+
+/*Calendar Main*/
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 15px;
+    padding: 40px;
+}
+.calendar > div {
+    border-radius: 20px;
+}
+
+.calendar-top{
+    padding: 10px 20px;
+    font-weight: 900;
+    color: white;
+    background: rgb(94, 194, 189);
+    text-align: center;
+}
+.calendar-top:first-of-type {
+    background: rgb(250, 90, 90);
+}
+
+.hidden-data {
+    visibility: hidden;
+}
+
+.data {
+    background: #fff;
+    padding: 20px 30px;
+}

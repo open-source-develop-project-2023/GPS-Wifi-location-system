@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <title>Search</title>
+    <script 
+    src="https://kit.fontawesome.com/eba5a180cb.js" 
+    crossorigin="anonymous">
+</script>
+
+<script>
+    function goBack() {
+      window.history.back();
+    }
+</script>
+
+<script src="search.js" defer></script>
+<link rel="stylesheet" href="search.css">
+
+
+
+</head>
+<body>
+    <nav class="GIT">
+        <div class="GIT__logo">
+            <i class="fa-brands fa-openid"></i>
+            <a href="">GIT</a>
+        </div>
+
+        <ul class="GIT__menu">
+            <li><a href="category1.html">Play</a></li>
+            <li><a href="category2.html">Calendar</a></li>
+            <li><a href="category3.html">Cash</a></li>
+            <li><a href="category4.html">System</a></li>
+        </ul>
+
+      
+        <a href="#" class="Back" onclick="goBack()">
+            <li><i class="fa-solid fa-arrow-left"></i></li>
+        </a>
+   
+
+        <a href="#" class="GIT__toogleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    <section class="home1">
+
+    </section>
+    <h1>
+        <span>S</span>
+        <span>e</span>
+        <span>a</span>
+        <span>r</span>
+        <span>c</span>
+        <span>h</span>
+    </h1>
+    
+<form action="https://www.google.com/search" method="get">
+    <input type="text" name="q">
+
+<div class="button-box">
+<button type="submit">Google 검색</button>  
+<button>I'm Feeling Lucky</button>
+</div>
+</form>
+
+</body>
+</html>
