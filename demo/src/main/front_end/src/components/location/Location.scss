@@ -1,0 +1,24 @@
+div#location {
+    display: flex; // 유동적
+    flex-direction: row; // 방향: 가로로 정룔 
+}
+
+div#search-list{
+    width: 200px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+div.place {
+    cursor: pointer;
+    padding: 20px 0px;
+    border-bottom: 1px solid gray;
+}
+
+div.place:last-child {
+    border-bottom: none;
+}
+
+p#selected {
+    font-weight: 900;
+}

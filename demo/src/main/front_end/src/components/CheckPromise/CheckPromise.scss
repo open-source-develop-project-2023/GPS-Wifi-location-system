@@ -1,0 +1,35 @@
+div#check-promise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#check-promise header {
+    width: 100%;
+    background-color: #50bcdf;
+    color: white;
+    -webkit-text-stroke: 1px #459ab6;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+div.check-list {
+    width: calc(100% - 400px);
+    padding: 16px 200px;
+    display: flex;
+    font-size: 20px;
+    
+    border-bottom: 1px solid #459ab6;
+}
+
+div.check-list-info {
+    width: 200px;
+}
+
+div#button-list {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
